@@ -1,0 +1,27 @@
+/* Light Lime: #abd699
+
+Fresh Lemon: #ffe26a
+
+Teal: #75c9b7
+
+Mint: #c7ddcc
+
+Navy: #16123f */
+
+*{
+    margin:0%;
+    padding:0%;
+    display: block;
+}
+
+.block{
+    background:#e2fae8;
+}
+
+nav{
+    width:100%;
+    height:40px;
+}
+.nav{
+    display: flex;
+}
