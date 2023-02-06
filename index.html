@@ -1,73 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Abhishek's Profile</title>
-	<link rel="stylesheet" href="style.css">
+  <!-- meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An official portfolio website for Abhishek Patil">
+  <meta name="author" content="Abhishek Patil">
+
+  <!-- Google Font CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree&display=swap" rel="stylesheet">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
+<!-- Nav Bar -->
 <body>
+  <nav class="navbar">
+    <div class="navbar__container">
+        <a href="https://halftoothed.github.io/"><img src="images/logo.jpeg" class = "logo"></a>
+        <a href="https://halftoothed.github.io/" id="navbar__logo"></a>
+       <div class="navbar__toggle" id="mobile-menu">
+         <span class="bar"></span>
+          <span class="bar"></span>
+         <span class="bar"></span>
+       </div>
+    </div>
+  </nav>
 
-	<!-- navbar -->
+  <!-- Hero Section-->
+  <div class="main">
+    <div class="main__container">
+      <div class="main__content">
+        <h1>Hi, I'm <span>Abhishek</span> Patil</h1>
+        <p>Welcome to my official portfolio website: a coding project to showcase my Javascript, HTML, and CSS skills!
+          <br>
+          <a href="https://www.linkedin.com/in/abhishek-patil-aa0097239/">
+            <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" id="linkedin"/>
+          </a>
+          <a href="https://github.com/HalfToothed">
+            <img src="https://img.shields.io/badge/-Github-black?logo=github&logoColor=white&style=for-the-badge&logoWidth=20" id="github"/>
+          </a>
+        </p>
+      </div>
+      <div class="images">
+        <img src="images/shape.png" class = "shape">
+        <img src="images/abhishek.png" class = "abhi">
+      </div>
+    </div>
+  </div>
 
-	<nav>
-		<div class="nav block">
-			<div class="logo"></div>
-			<div class="nav-heading">Welcome</div>
-		</div>
-	</nav>	
+  <div class="info">
+  <!-- About Me Section -->
+    <div class="about__container">
+      <div class="about__content">
+        <h1> About Me </h1>
+        <p>I completed my Bachelors of Computer Application degree from Govt. Holkar Science Collage, Indore. Fueled by a passion for learning and collaboration, I am interested in building products that can solve real-world problems. While I am most proficient at coding in <span>JavaScript</span> and learning Data Structure & Algorithms in <span>C++</span> , I am always looking to expand my knowledge. </p>
+        <br>
+        <p>After learning C and C++ at collage I self-learned <span>Javascript, HTML, CSS </span>and hard-coded this website without using any templates or frameworks. I will continue updating it as I learn tools such as React and Bootstrap.</p>
+        <br>
+        <p> Last but not least, my experience as a front-end intern at Yums Advertising has taught me how to optimize user experience and refined my communication skills within a team-based environment. I look forward to continue developing leadership and teamwork skills through contributions to open source, personal/group projects, and internships.</p>
+      </div>
+    </div>
+    
+    <div class="space"> </div>
 
-	<!-- Hero Section -->
+    <!-- Updates -->
+    <div class="updates__container">
+      <div class="updates__content">
+        <h1>Updates </h1>
+        <p>Current Project: doing Javascript 30 day challenge </p>
+        <br>
+        <p> (January 28, 2023) Chrome extension: for notetaking and saving urls coded in JavaScript</p>
+      </div>
+    </div>
 
-	<div class="container">
-		<div class="content">
-			<h1>Hey, It's <span>Abhishek</span><br>Patil</h1>
-			<p>Welcome to my Portfolio Website deployed by me to showcase you my front-end skills I hope you like it. 
-				<a href="https//github/HalfToothed" class="git"></a>
-				<a href="https//Linkdin/AbhishekPatil" class="linkdin"></a>
-			</p>
-		</div>
-		<div class="picture"></div>
-	</div>
+    <div class="space"> </div>
 
-	<!-- About me -->
+    <!-- Mischellaneous -->
+    <div class="misc__container">
+      <div class="misc__content">
+        <ul style = "list-style-type:disc">
+          <h1> My Projects</h1>
+          </ul>
+          <li><a href="https://github.com/HalfToothed/JavaScript30-Projects" class="project">Javascript 30 Projects</a></li>
+          <li><a href="https://github.com/HalfToothed/LeadsTracker" class="project">Chrome Extension</a> </li>
+          <li><a href="https://halftoothed.github.io/PasswordGenerator/" class="project">Password Generator</a> </li>
+          <li><a href="https://halftoothed.github.io/UnitConverter/" class="project">Unit Converter</a></li>
+          <li><a href="https://halftoothed.github.io/Color-Flipper/" class="project">Color Flipper</a></li>
+          <li><a href="https://halftoothed.github.io/Microsoft-Homepage-Clone/" class="project">Microsoft Website Clone</a></li>
+          </div>
+      </div>
+    </div>
+  </div>
 
-	<div class="about block">
-		<p class="heading">About Me</p>
-		<div class="text">I completed my Bachelors of Computer Application degree from Govt. Holkar Science Collage, Indore. Fueled by a passion for learning and collaboration, I am interested in building products that can solve real-world problems. While I am most proficient at coding in <p class="highlight">Javascript</p> and learning Data Structure & Algoriths in <p class="highlight">C++</p>, I am always looking to expand my knowledge.
-			<br> After learning C and C++ at collage I self-learned <p class="hightlight">Javascript, HTML, CSS </p>and hard-coded this website without using any templates or frameworks. I will continue updating it as I learn tools such as React and Bootstrap.
-			<br> Last but not least, my experience as a front-end intern at Yums Advertising has taught me how to optimize user experience and refined my communication skills within a team-based environment. I look forward to continue developing leadership and teamwork skills through contributions to open source, personal/group projects, and internships. 
-		</div>
-	</div>
+  <div class="space"> </div>
+  <div class="copyright">
+    <p>© 2023 Abhishek Patil
+    </p>
+  </div>
+  <div class="space"> </div>
 
-	<!-- Update -->
-
-	<div class="update block">
-		<p class="heading">Updates</p>
-		<div class="text">
-			Current Project: making 1 project a day for Javascript 30 day challange.
-			(Feb 01, 2023) : Chrome Extension for note taking & and saving urls, coded in Javascript;
-		</div>
-	</div>
-
-	<!-- Projects -->
-
-	<div class="projects block">
-		<p class="heading">Projects</p>
-		<div class="project">
-			<div class="sub"></div>
-			<div class="sub"></div>
-			<div class="sub"></div>
-		</div>
-	</div>
-
-	 <!-- Footer -->
-
-	 <div class="footer">
-		<div class="copyright"></div>
-		<div class="name">Abhishek Patil</div>
-	 </div>
-	 
+  <script src="app.js"></script>
+  <h1></h1>
 </body>
 </html>
