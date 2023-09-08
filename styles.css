@@ -10,6 +10,7 @@ body, h1, h2, h3, p, ul, li {
 body {
   background-color: #f0f0f0;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 3vh;
 }
 
 /* Style the navigation bar */
@@ -27,7 +28,7 @@ a{
 }
 
 nav .name {
-  font-size: 35px;
+  font-size: 6vh;
   font-weight: bold;
 }
 
@@ -79,15 +80,15 @@ nav .social a {
 }
 
 .projects {
-  padding: 20px;
+  padding: 4vh;
   margin-left: 20vh;
   margin-right: 20vh;
   border-radius: 5px;
 }
 
 .projects h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 35px;
+  margin-bottom: 40px;
 }
 
 .projects ul {
@@ -105,14 +106,21 @@ nav .social a {
 }
 
 .projects p {
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
   }
-
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav .name {
+   text-align: center;
+  }
   .content .image {
     max-width: 50%;
     padding: 0;
@@ -127,28 +135,8 @@ nav .social a {
     margin: 10px;
     padding: 10px;
   }
-}
 
-@media (max-width: 480px) {
-
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav .social {
-    margin-top: 10px;
-  }
-
-  .content .image {
-    max-width: 50%;
-  }
-
-  .content .about {
-    max-width: 100%;
-  }
-
-  .about{
-    margin: 20px;
+  .heading{
+    text-align: center;
   }
 }
