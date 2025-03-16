@@ -3,8 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abhishek's Website</title> 
+    <title>Abhishek's Website</title>
   </head>
+  <style>
+    body {
+      font-size: 17px;
+      color: #212121;
+      font-family: "avenir next", avenir, "helvetica neue", helvetica, roboto,
+        noto, ubuntu, "segoe ui", arial, sans-serif;
+      margin: 5% 10% 0 10%;
+      background-color: #f5f5f5;
+      padding: 5px;
+    }
+
+    h1,
+    h3 {
+      font-weight: 200;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 25px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #004eff;
+      z-index: 2;
+      position: relative;
+    }
+
+    a:after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: linear 0.15s;
+      transition: linear 0.15s;
+      background: currentColor;
+      z-index: -1;
+    }
+
+    a:not(.home):hover:after {
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+
+    li {
+      margin-bottom: 3px;
+    }
+  </style>
   <body>
     <section>
       <div class="Intro">
@@ -12,7 +67,7 @@
         <p><q>I make simple and useful software</q></p>
       </div>
 
-      <br/>
+      <br />
 
       <div class="projects">
         <h2><i>Projects</i></h2>
@@ -20,72 +75,143 @@
           <li>
             <h3>Gostman</h3>
             <p>
-            A terminal-based API client, allowing users to create, send, and manage HTTP requests easily with a dynamic and interactive terminal user interface
+              A terminal-based API client, allowing users to create, send, and
+              manage HTTP requests easily with a dynamic and interactive
+              terminal user interface.
+              <br />
+              [ <b><i>Golang</i></b> |
+              <a href="https://github.com/HalfToothed/gostman" target="_blank"
+                >Source</a
+              >]
             </p>
-            <i>Go</i> | [<a href="https://github.com/HalfToothed/gostman" target="_blank">GitHub</a>]
           </li>
           <li>
             <h3>Page-In-Picture</h3>
             <p>
-              Page-In-Picture is a Chrome extension that allows you to view webpage in Picture-in-Picture (PiP) mode, offering a convenient, distraction-free viewing experience.
+              A Chrome extension that allows you to view webpage in
+              Picture-in-Picture (PiP) mode, offering a convenient,
+              distraction-free viewing experience.
+              <br />
+              [ <b><i>JavaScript</i></b> |
+              <a
+                href="https://github.com/HalfToothed/page-in-picture"
+                target="_blank"
+                >Source</a
+              >]
             </p>
-            <i>JavaScript</i> | [<a href="https://github.com/HalfToothed/page-in-picture" target="_blank">GitHub</a>]
           </li>
           <li>
             <h3>Online Code Compiler</h3>
             <p>
-              Web-based code compiler that lets you write, compile, and run code in multiple programming languages right from your browser
+              Web-based code compiler that lets you write, compile, and run code
+              in multiple programming languages right from your browser.
+              <br />
+              [ <b><i>React, Judge0 API</i></b> |
+              <a
+                href="https://online-code-compiler-rose.vercel.app/"
+                target="_blank"
+                >Live</a
+              >
+              |
+              <a
+                href="https://github.com/HalfToothed/online-code-compiler"
+                target="_blank"
+                >Source</a
+              >]
             </p>
-            <i>React, Judge0 API</i> | [<a href="https://online-code-compiler-rose.vercel.app/" target="_blank">Live</a>] [<a href="https://github.com/HalfToothed/online-code-compiler" target="_blank">GitHub</a>]
           </li>
           <li>
             <h3>GoChat</h3>
             <p>
-              A dead simple chat application, created just to learn about websockets
+              A dead simple chat application, created just to learn about
+              websockets.
+              <br />
+              [ <b><i>Go, React, Websocket</i></b> |
+              <a href="https://github.com/HalfToothed/gochat" target="_blank"
+                >Source</a
+              >]
             </p>
-            <i>Go, React, Websocket</i> | [<a href="https://gochat-av01.onrender.com/" target="_blank">Live</a>] [<a href="https://github.com/HalfToothed/gochat" target="_blank">GitHub</a>]
           </li>
           <li>
             <h3>Interview AI</h3>
             <p>
-              AI-powered tool simplifying interviews by generating tailored questions from resumes, basically a wrapper on top of Google-Gemini
+              AI-powered tool simplifying interviews by generating tailored
+              questions from resumes, basically a wrapper on top of
+              Google-Gemini.
+              <br />
+              [ <b><i>C#, Google-Gemini API</i></b> |
+              <a
+                href="https://github.com/HalfToothed/interviewAI"
+                target="_blank"
+                >Source</a
+              >]
             </p>
-            <i>C#, Google-Gemini API</i> | [<a href="https://github.com/HalfToothed/interviewAI" target="_blank">GitHub</a>]
           </li>
-          <!-- <li>
-            <h3>Rocket Watcher</h3>
-            <p>
-              It is a Twitter(X) bot created with C#. which is used to tweet
-              about the recent rocket launching form the planet
-            </p>
-            <i>C#, Twitter API</i> | [<a href="https://twitter.com/rocket_watcher" target="_blank">Link</a>] [<a href="https://github.com/HalfToothed/twitter-bot" target="_blank">Github</a>]
-          </li>
-          <li>
-            <h3>Chess Clock</h3>
-            <p>It is a Chess Clock created with Angular Framework</p>
-            <i>Angular</i> | [<a href="https://halftoothed.github.io/angularChessClock/" target="_blank">Live</a>] [<a href="https://github.com/HalfToothed/angularChessClock" target="_blank">Github</a>]
-          </li>
-          <li>
-            <h3>Bookworm</h3>
-            <p>It is website to show off how many books I have</p>
-            <i>HTML, CSS, JavaScript</i> | [<a href="https://halftoothed.github.io/Bookworm/" target="_blank">Live</a>] [<a href="https://github.com/HalfToothed/Bookworm" target="_blank">GitHub</a>]
-          </li> -->
         </ul>
       </div>
 
-      <br>
+      <br />
 
       <div class="About">
         <h2><i>About</i></h2>
-        <p>I am a Software Developer with experience in designing and developing scalable web applications, proficient in <u>C#, DotNet, Angular, React</u> <br> Currently learning <u>Go</u> and <u>Docker</u></p>
-        [<a href="mailto:abhishekandmails@gmail.com" target="_blank">abhishekandmails@gmail.com</a> ]
-        [<a href="https://github.com/HalfToothed" target="_blank">GitHub</a>]
-        [<a href="https://www.linkedin.com/in/abhishek-patil-aa0097239/" target="_blank">LinkedIn</a>]
-        [<a href="https://twitter.com/itszAbhishek" target="_blank">X</a>]
+        <p>
+          I am a Software Developer with experience in designing and developing
+          scalable web applications.
+        </p>
+        <ul>
+          <li>
+            Skills:
+            <ul>
+              <li>Golang, C#, Typescipt</li>
+              <li>.NET, Gin, React</li>
+            </ul>
+          </li>
+          <br />
+          <li>
+            Contact Me:
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/abhishek-patil-aa0097239"
+                  title="my linkedin"
+                  target="_blank"
+                  rel="me noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/HalfToothed"
+                  title="my github"
+                  target="_blank"
+                  rel="me noopener noreferrer"
+                  >Github</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/itszAbhishek"
+                  title="my twitter"
+                  target="_blank"
+                  rel="me noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:abhishekandmails@gmail.com"
+                  title="my email"
+                  target="_blank"
+                  rel="me noopener noreferrer"
+                  >Email</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
-      
-      <br>
 
+      <br />
     </section>
   </body>
 </html>
